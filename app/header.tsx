@@ -7,10 +7,12 @@ const navigation = [
   {
     name: "Share",
     href: "/share",
+    external: false
   },
   {
     name: "Unseal",
     href: "/unseal",
+    external: false
   },
 ] satisfies { name: string; href: string; external?: boolean }[];
 
