@@ -12,8 +12,10 @@ const navigation = [
     name: "Unseal",
     href: "/unseal",
   },
+] satisfies { name: string; href: string; external?: boolean }[];
 
-  {
+/*
+ {
     name: "Deploy",
     href: "/deploy",
   },
@@ -22,7 +24,7 @@ const navigation = [
     href: "https://github.com/chronark/envshare",
     external: true,
   },
-] satisfies { name: string; href: string; external?: boolean }[];
+*/
 
 export const Header: React.FC = () => {
   const pathname = usePathname();
